@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das ist die Gemini Seite</title>
+    <!-- Lade Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Verwende die Schriftart Inter -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; /* Weißer Hintergrund */
+        }
+    </style>
+</head>
+<body class="text-black antialiased">
+
+    <!-- 1. HEADER / BANNER SEKTION -->
+    <header class="bg-blue-800 shadow-xl">
+        <div class="container mx-auto px-4 py-8 md:py-16 text-white grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Titel und Beschreibung -->
+            <div class="space-y-4">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+                    Das ist die Gemini Seite
+                </h1>
+                <p class="text-blue-200 text-lg">
+                    Ihr digitaler Partner für die Zukunft von Cloud, KI und Innovation.
+                </p>
+            </div>
+            
+            <!-- Fotorealistisches Bild (Cloud, AI und Menschen) -->
+            <div class="w-full h-64 md:h-80 bg-gray-700 rounded-lg shadow-2xl overflow-hidden">
+                <!-- Placeholder-Bild, das Cloud, AI und Menschen symbolisiert -->
+                <img src="https://placehold.co/800x400/1e3a8a/ffffff?text=Cloud%20+%20AI%20+%20Mensch"
+                     alt="Fotorealistisches Bild, das Cloud Computing, Künstliche Intelligenz und Menschen in einer harmonischen digitalen Landschaft symbolisiert."
+                     class="w-full h-full object-cover transition duration-300 ease-in-out hover:scale-105"
+                     onerror="this.onerror=null;this.src='https://placehold.co/800x400/1e3a8a/ffffff?text=Symbolbild%20KI%20Cloud';"
+                >
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HAUPTTEXT SEKTION -->
+    <main class="container mx-auto px-4 py-16">
+        <section class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-blue-800 border-b-2 border-blue-200 pb-2">Über uns</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+        </section>
+
+        <!-- 3. INTERESSE / FORMULAR SEKTION -->
+        <section id="kontakt" class="bg-gray-50 p-8 md:p-12 rounded-xl shadow-lg border border-gray-200">
+            <h2 class="text-3xl font-bold mb-8 text-center text-blue-800">Interessiert?</h2>
+            <form action="#" method="POST" class="max-w-lg mx-auto space-y-6">
+                
+                <!-- Name Feld -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" id="name" name="name" required
+                           class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-800 focus:border-blue-800 transition duration-150">
+                </div>
+
+                <!-- Email Feld -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" id="email" name="email" required
+                           class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-800 focus:border-blue-800 transition duration-150">
+                </div>
+
+                <!-- Nachricht Feld -->
+                <div>
+                    <label for="nachricht" class="block text-sm font-medium text-gray-700 mb-1">Nachricht</label>
+                    <textarea id="nachricht" name="nachricht" rows="4" required
+                              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-800 focus:border-blue-800 transition duration-150"></textarea>
+                </div>
+
+                <!-- Sende-Button -->
+                <button type="submit"
+                        class="w-full py-3 px-6 bg-blue-800 text-white font-semibold rounded-lg shadow-md hover:bg-blue-900 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transition duration-200 transform hover:scale-[1.01]">
+                    Absenden
+                </button>
+                <p class="text-center text-sm text-gray-500 mt-4">Wir werden uns so schnell wie möglich bei Ihnen melden.</p>
+            </form>
+        </section>
+    </main>
+
+    <!-- 4. FOOTER -->
+    <footer class="bg-gray-100 mt-16 border-t border-gray-200">
+        <div class="container mx-auto px-4 py-8 text-center">
+            <p class="text-sm text-black">
+                &copy; 2024 Das ist die Gemini Seite. Alle Rechte vorbehalten.
+            </p>
+            <address class="mt-2 text-sm text-gray-600 not-italic">
+                Acme GmbH, Römerhof 14, 8008 Zürich
+            </address>
+        </div>
+    </footer>
+
+</body>
+</html>
